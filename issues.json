@@ -1,0 +1,443 @@
+[
+  {
+    "id": "color-01",
+    "title": "[COLOR-01] Primary buttons render red instead of purple",
+    "body": "**File:** `css/style.css` \u2014 `.btn-primary`\n\nLook at any primary button (\"Get Started\", \"Start Free Trial\").\n\n**Expected:** Buttons use the brand purple (`--color-primary`).\n**Actual:** They use `--color-danger` (red).",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-02",
+    "title": "[COLOR-02] \"Watch Demo\" button border is invisible",
+    "body": "**File:** `css/style.css` \u2014 `.btn-secondary`\n\nLook at the secondary button in the hero section.\n\n**Expected:** A visible outline around the button.\n**Actual:** `border-color` matches the page background, so no border is visible.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-03",
+    "title": "[COLOR-03] Nav links disappear on hover",
+    "body": "**File:** `css/style.css` \u2014 `.nav-link:hover`\n\nHover over any navbar link.\n\n**Expected:** The link stays visible.\n**Actual:** Hover color matches the page background, making the text vanish.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-04",
+    "title": "[COLOR-04] Navbar background is transparent",
+    "body": "**File:** `css/style.css` \u2014 `.navbar`\n\nScroll the page and watch the sticky navbar.\n\n**Expected:** A solid background so page content doesn't show through/overlap it.\n**Actual:** `background-color: transparent`.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-05",
+    "title": "[COLOR-05] \"NOW IN BETA\" hero tag is invisible",
+    "body": "**File:** `css/style.css` \u2014 `.hero__eyebrow`\n\nLook at the small pill/tag above the hero heading.\n\n**Expected:** Visible label text on its pill background.\n**Actual:** The text color is identical to its own background color.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-06",
+    "title": "[COLOR-06] Hero headline is low-contrast and hard to read",
+    "body": "**File:** `css/style.css` \u2014 `.hero__title`\n\nLook at the main \"Organize your work...\" headline.\n\n**Expected:** High-contrast text using the main text color.\n**Actual:** It's colored with the subtle border token, making it faint against the dark background.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-07",
+    "title": "[COLOR-07] Feature icons use an alarming red instead of the brand color",
+    "body": "**File:** `css/style.css` \u2014 `.feature-card__icon`\n\nLook at the diamond icon on each feature card.\n\n**Expected:** Icons use the brand purple or a neutral accent color.\n**Actual:** They use `--color-danger` (red), which reads as a warning/error.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-08",
+    "title": "[COLOR-08] \"Loved by teams everywhere\" heading is invisible",
+    "body": "**File:** `css/style.css` \u2014 `.testimonials .section-title`\n\nLook at the section heading above the testimonial cards.\n\n**Expected:** Readable heading text.\n**Actual:** Its color matches the section's own background color exactly.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-09",
+    "title": "[COLOR-09] Testimonial card borders clash with the dark theme",
+    "body": "**File:** `css/style.css` \u2014 `.testimonial-card`\n\nLook closely at the border around any testimonial card.\n\n**Expected:** Border uses the theme's `--color-border` token.\n**Actual:** Hardcoded to light gray (`#ccc`), which looks out of place on a dark background.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-10",
+    "title": "[COLOR-10] Decorative quote mark is a jarring red",
+    "body": "**File:** `css/style.css` \u2014 `.testimonial-card__quote::before`\n\nLook at the small opening-quote character before each testimonial.\n\n**Expected:** A subtle, muted tone consistent with the design.\n**Actual:** It's colored with `--color-danger` (red), which looks like an error indicator.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-11",
+    "title": "[COLOR-11] \"Pro\" plan is highlighted with a red border instead of the brand color",
+    "body": "**File:** `css/style.css` \u2014 `.pricing-card--featured`\n\nLook at the border around the middle (\"Pro\") pricing card.\n\n**Expected:** The recommended plan should stand out using the brand purple.\n**Actual:** It's outlined in `--color-danger` (red), which reads as a warning rather than a recommendation.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-12",
+    "title": "[COLOR-12] \"Most Popular\" badge text is invisible",
+    "body": "**File:** `css/style.css` \u2014 `.pricing-card__badge`\n\nLook at the badge above the \"Pro\" pricing card.\n\n**Expected:** White text visible against the purple badge background.\n**Actual:** The text color matches the badge's own background color.",
+    "labels": [
+      "bug: color",
+      "medium"
+    ]
+  },
+  {
+    "id": "color-13",
+    "title": "[COLOR-13] CTA banner button blends into its background",
+    "body": "**File:** `css/style.css` \u2014 `.cta-banner .btn-primary`\n\nLook at the \"Start Free Trial\" button in the purple CTA banner near the bottom of the page.\n\n**Expected:** The button should visually stand out from the banner.\n**Actual:** Its background color is identical to the banner's background, so it nearly disappears.",
+    "labels": [
+      "bug: color",
+      "medium"
+    ]
+  },
+  {
+    "id": "color-14",
+    "title": "[COLOR-14] CTA banner body text is hard to read on the purple background",
+    "body": "**File:** `css/style.css` \u2014 `.cta-banner__text`\n\nLook at the paragraph under \"Ready to get strated?\" in the CTA banner.\n\n**Expected:** Light, high-contrast text against the purple banner.\n**Actual:** It uses the muted gray text color, which has poor contrast on purple.",
+    "labels": [
+      "bug: color",
+      "medium"
+    ]
+  },
+  {
+    "id": "color-15",
+    "title": "[COLOR-15] Footer column headings have no visual hierarchy over their links",
+    "body": "**File:** `css/style.css` \u2014 `.footer-column__heading`\n\nCompare a footer heading (e.g. \"Product\") to the links below it.\n\n**Expected:** Headings should be more prominent (brighter) than the links underneath.\n**Actual:** Both use the exact same muted color.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-16",
+    "title": "[COLOR-16] Footer links show no hover feedback",
+    "body": "**File:** `css/style.css` \u2014 `.footer-column__link:hover`\n\nHover over any footer link.\n\n**Expected:** The link color should change to indicate it's interactive.\n**Actual:** The hover color is identical to the default color \u2014 nothing visibly changes.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "color-17",
+    "title": "[COLOR-17] Footer copyright line is very hard to read",
+    "body": "**File:** `css/style.css` \u2014 `.site-footer__copyright`\n\nLook at the small copyright line at the very bottom of the page.\n\n**Expected:** Readable muted text.\n**Actual:** It uses the border color token, which is far too close to the footer background.",
+    "labels": [
+      "bug: color",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-01",
+    "title": "[ALIGN-01] Hero content isn't centered",
+    "body": "**File:** `css/style.css` \u2014 `.hero`\n\nLook at the hero section at the top of the page.\n\n**Expected:** The eyebrow tag, heading, subtitle, and buttons should all be centered on the page.\n**Actual:** Everything is left-aligned.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-02",
+    "title": "[ALIGN-02] Hero buttons stack instead of sitting side by side",
+    "body": "**File:** `css/style.css` \u2014 `.hero__actions`\n\nLook at the two buttons under the hero subtitle.\n\n**Expected:** Buttons sit next to each other in a row.\n**Actual:** `display: block` stacks them one per line.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-03",
+    "title": "[ALIGN-03] Feature cards form an uneven, broken grid",
+    "body": "**File:** `css/style.css` \u2014 `.features__grid`\n\nLook at the 4 feature cards.\n\n**Expected:** 4 equal-width columns in a single row (or a clean wrap).\n**Actual:** Only 3 uneven column tracks are defined (`1fr 2fr 1fr`) for 4 cards, so the 4th card wraps awkwardly and columns aren't equal width.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-04",
+    "title": "[ALIGN-04] Feature card title is centered but its description is left-aligned",
+    "body": "**File:** `css/style.css` \u2014 `.feature-card__title`\n\nLook at any feature card.\n\n**Expected:** Title and description should share the same text alignment.\n**Actual:** The title is centered while the paragraph below it is left-aligned, which looks inconsistent.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-05",
+    "title": "[ALIGN-05] Testimonial cards are different heights",
+    "body": "**File:** `css/style.css` \u2014 `.testimonials__grid`\n\nCompare the three testimonial card heights.\n\n**Expected:** All three cards should be the same height regardless of quote length.\n**Actual:** `align-items: flex-start` stops them from stretching evenly.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-06",
+    "title": "[ALIGN-06] Pricing cards are different heights",
+    "body": "**File:** `css/style.css` \u2014 `.pricing__grid`\n\nCompare the three pricing card heights.\n\n**Expected:** All three cards should line up at the same height.\n**Actual:** `align-items: flex-start` stops them from stretching evenly.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-07",
+    "title": "[ALIGN-07] \"Most Popular\" badge floats way outside the card",
+    "body": "**File:** `css/style.css` \u2014 `.pricing-card__badge`\n\nLook at the badge above the \"Pro\" plan.\n\n**Expected:** The badge should sit as a small ribbon overlapping the top edge of the card.\n**Actual:** `top: -34px` pushes it far above the card, disconnected from it.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-08",
+    "title": "[ALIGN-08] \"/month\" text sits awkwardly high next to the price",
+    "body": "**File:** `css/style.css` \u2014 `.pricing-card__price span`\n\nLook at any price, e.g. \"$12/month\".\n\n**Expected:** \"/month\" should align naturally with the bottom of the large price number.\n**Actual:** `vertical-align: top` pushes it up near the top of the number instead.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-09",
+    "title": "[ALIGN-09] Footer columns are bunched on the left instead of spread out",
+    "body": "**File:** `css/style.css` \u2014 `.site-footer__grid`\n\nWiden your browser and look at the 4 footer columns.\n\n**Expected:** Columns evenly spread across the footer's full width.\n**Actual:** `justify-content: flex-start` bunches them together on the left.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-10",
+    "title": "[ALIGN-10] Footer copyright line isn't centered",
+    "body": "**File:** `css/style.css` \u2014 `.site-footer__copyright`\n\nLook at the bottom-most line of the page.\n\n**Expected:** Centered under the footer, to balance the layout above it.\n**Actual:** `text-align: left` leaves it flush to the left edge.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-11",
+    "title": "[ALIGN-11] CTA banner content isn't centered",
+    "body": "**File:** `css/style.css` \u2014 `.cta-banner`\n\nLook at the purple \"Ready to get strated?\" banner section.\n\n**Expected:** Heading, text, and button centered in the banner.\n**Actual:** `text-align: left` leaves everything flush to the left edge.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "align-12",
+    "title": "[ALIGN-12] Navbar items aren't vertically centered",
+    "body": "**File:** `css/style.css` \u2014 `.navbar`\n\nLook at the logo, nav links, and \"Get Started\" button in the top bar.\n\n**Expected:** All three groups sit on the same vertical center line.\n**Actual:** `align-items` is missing from the flex container.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-13",
+    "title": "[ALIGN-13] Nav links are cramped together",
+    "body": "**File:** `css/style.css` \u2014 `.navbar__nav`\n\nLook at the spacing between \"Features\", \"Pricing\", \"Testimonials\" and \"Contact\".\n\n**Expected:** Comfortable spacing between links.\n**Actual:** `gap: 2px` packs them almost touching each other.",
+    "labels": [
+      "bug: alignment",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "align-14",
+    "title": "[ALIGN-14] Pricing feature lists have no bullets or indentation",
+    "body": "**File:** `css/style.css` \u2014 `.pricing-card__features`\n\nLook at the feature list inside any pricing card.\n\n**Expected:** A clear list appearance (bullets, checkmarks, or similar) so items read as a list.\n**Actual:** `list-style: none` removes the bullets and nothing replaces them, so items look like plain stacked paragraphs.",
+    "labels": [
+      "bug: alignment",
+      "medium"
+    ]
+  },
+  {
+    "id": "text-01",
+    "title": "[TEXT-01] Nav link is misspelled: \"Testimonals\"",
+    "body": "**File:** `index.html` \u2014 navbar\n\n**Expected:** \"Testimonials\"\n**Actual:** \"Testimonals\" (missing an \"i\").",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-02",
+    "title": "[TEXT-02] Hero headline is misspelled: \"efortlessly\"",
+    "body": "**File:** `index.html` \u2014 hero heading\n\n**Expected:** \"effortlessly\" (double f, double l).\n**Actual:** \"efortlessly\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-03",
+    "title": "[TEXT-03] Hero subtitle has a grammar error",
+    "body": "**File:** `index.html` \u2014 hero subtitle\n\n**Current text:** \"TaskFlow help teams to organizing their work and getting things done faster than ever.\"\n**Expected:** Subject-verb agreement and consistent verb forms, e.g. \"TaskFlow helps teams organize their work and get things done faster than ever.\"",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-04",
+    "title": "[TEXT-04] Hero button text has inconsistent casing",
+    "body": "**File:** `index.html` \u2014 hero primary button\n\n**Expected:** Title Case to match every other button on the page (\"Start Free Trial\").\n**Actual:** \"start free trial\" is all lowercase.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-05",
+    "title": "[TEXT-05] Secondary hero button text isn't descriptive",
+    "body": "**File:** `index.html` \u2014 hero secondary button\n\n**Expected:** Button text should describe the action, e.g. \"Watch Demo\".\n**Actual:** It just says \"Click Here\", which doesn't tell the user what will happen.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-06",
+    "title": "[TEXT-06] Feature title is misspelled: \"Colaborate\"",
+    "body": "**File:** `index.html` \u2014 first feature card\n\n**Expected:** \"Collaborate\" (double l).\n**Actual:** \"Colaborate\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-07",
+    "title": "[TEXT-07] Second feature card still has its placeholder title",
+    "body": "**File:** `index.html` \u2014 second feature card\n\n**Expected:** A real, descriptive feature title.\n**Actual:** The title literally says \"Feature Two\" \u2014 placeholder text that was never replaced.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-08",
+    "title": "[TEXT-08] Second feature card still has placeholder Lorem ipsum text",
+    "body": "**File:** `index.html` \u2014 second feature card\n\n**Expected:** Real copy describing the feature.\n**Actual:** The description is still Lorem ipsum placeholder text.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-09",
+    "title": "[TEXT-09] First testimonial quote is missing its closing quotation mark",
+    "body": "**File:** `index.html` \u2014 first testimonial\n\nLook at the end of Maria Chen's quote.\n\n**Expected:** The quote should open and close with matching quotation marks.\n**Actual:** It opens with `\"` but never closes.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-10",
+    "title": "[TEXT-10] Second testimonial still has placeholder name and title",
+    "body": "**File:** `index.html` \u2014 second testimonial\n\n**Expected:** A real name and job title, like the other two testimonials.\n**Actual:** It literally says \"[Client Name], [Job Title]\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-11",
+    "title": "[TEXT-11] Pricing tier name is misspelled: \"Starater\"",
+    "body": "**File:** `index.html` \u2014 first pricing card\n\n**Expected:** \"Starter\".\n**Actual:** \"Starater\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-12",
+    "title": "[TEXT-12] Pricing feature is misspelled: \"Unlimted projects\"",
+    "body": "**File:** `index.html` \u2014 Starter pricing card\n\n**Expected:** \"Unlimited projects\".\n**Actual:** \"Unlimted projects\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-13",
+    "title": "[TEXT-13] CTA banner heading is misspelled: \"strated\"",
+    "body": "**File:** `index.html` \u2014 CTA banner\n\n**Expected:** \"Ready to get started?\"\n**Actual:** \"Ready to get strated?\"",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-14",
+    "title": "[TEXT-14] Footer copyright year is outdated",
+    "body": "**File:** `index.html` \u2014 footer\n\n**Expected:** The current year.\n**Actual:** \"\u00a9 2023 TaskFlow. All rights reserved.\"",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-15",
+    "title": "[TEXT-15] Footer legal link is misspelled: \"Pirvacy Policy\"",
+    "body": "**File:** `index.html` \u2014 footer, Legal column\n\n**Expected:** \"Privacy Policy\".\n**Actual:** \"Pirvacy Policy\".",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-16",
+    "title": "[TEXT-16] Page title and hero heading spell \"effortlessly\" differently",
+    "body": "**File:** `index.html` \u2014 `<title>` vs hero `<h1>`\n\nThe browser tab title spells the word correctly (\"Effortlessly\") while the on-page heading has a typo (\"efortlessly\", see TEXT-02). Once TEXT-02 is fixed, double check both places are consistent.",
+    "labels": [
+      "bug: text",
+      "good first issue"
+    ]
+  },
+  {
+    "id": "text-17",
+    "title": "[TEXT-17] Footer links all point to placeholder \"#\" instead of real pages",
+    "body": "**File:** `index.html` \u2014 footer, Company / Resources / Legal columns\n\n**Expected:** Real destination links (or clearly marked as coming soon).\n**Actual:** \"About\", \"Careers\", \"Blog\", \"Support\", and \"Terms of Service\" all use `href=\"#\"` placeholders.",
+    "labels": [
+      "bug: text",
+      "medium"
+    ]
+  },
+  {
+    "id": "text-18",
+    "title": "[TEXT-18] Call-to-action wording is inconsistent across the page",
+    "body": "**File:** `index.html` \u2014 hero vs pricing section\n\n**Expected:** Consistent terminology for the same action.\n**Actual:** The hero button says \"Start Free Trial\" but the pricing cards \u2014 which lead to the same signup flow \u2014 say \"Choose Plan\" instead.",
+    "labels": [
+      "bug: text",
+      "medium"
+    ]
+  }
+]
