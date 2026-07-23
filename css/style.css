@@ -151,7 +151,8 @@ body {
 
 .features__grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
   gap: var(--space-4);
   text-align: left;
 }
