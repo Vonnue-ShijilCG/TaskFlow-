@@ -323,7 +323,11 @@ body {
 }
 
 .cta-banner .btn-primary {
-  background-color: var(--color-primary);
+  background-color: #000000;
+}
+
+.cta-banner .btn-primary:hover {
+  background-color:  var(--color-danger);
 }
 
 /* ---------- Footer ---------- */
