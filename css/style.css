@@ -200,10 +200,6 @@ body {
   text-align: center;
 }
 
-.testimonials .section-title {
-  color: var(--color-surface);
-}
-
 .testimonials__grid {
   display: flex;
   align-items: flex-start;
