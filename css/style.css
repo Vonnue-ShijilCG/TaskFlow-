@@ -323,7 +323,6 @@ body {
 
 .cta-banner .btn-primary {
     background-color: var(--color-primary);
-    color: #fff;
 }
 
 .cta-banner .btn-primary:hover,
