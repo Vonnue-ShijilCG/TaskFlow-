@@ -176,7 +176,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .feature-card__title {
   font-size: 17px;
   margin: 0 0 var(--space-2);
@@ -323,13 +322,14 @@ body {
 }
 
 .cta-banner .btn-primary {
-  background-color: #000000;
+    background-color: var(--color-primary);
+    color: #fff;
 }
 
-.cta-banner .btn-primary:hover {
-  background-color:  var(--color-danger);
+.cta-banner .btn-primary:hover,
+.cta-banner .btn-primary:focus-visible {
+    background-color: var(--color-primary-dark);
 }
-
 /* ---------- Footer ---------- */
 .site-footer {
   padding: var(--space-5);
